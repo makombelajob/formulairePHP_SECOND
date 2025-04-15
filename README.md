@@ -66,7 +66,7 @@ A simple CSS style is applied to enhance the look of the form.
 
 ## 🖼 Screenshot
 
-![Screenshot](/appa/assets/screenshot.png)
+![Screenshot](/app/assets/screenshot.png)
 
 ---
 
@@ -74,12 +74,12 @@ A simple CSS style is applied to enhance the look of the form.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/php-registration-form.git
-   cd php-registration-form
+   git clone https://github.com/makombelajob/formulairePHP_SECOND.git
+   cd formulairePHP_SECOND
    
 
 ## 📂 Project Structure
-Formulaire/
+formulairePHP_SECOND/
 ├── css/
 │   └── styles.css
 
