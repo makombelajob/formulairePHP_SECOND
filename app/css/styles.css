@@ -1,0 +1,72 @@
+:root{
+    font-size: 15px;
+    --text-black: black;
+    --text-white: white;
+}
+
+body{
+    main{
+        width: 50%;
+        margin: auto;
+        h1{
+            text-transform: uppercase;
+            font-weight: 700;
+            text-align: center;
+        }
+        form{
+            margin-top: 2rem;
+            label{
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            input:not([type=checkbox]){
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0.6rem;
+                border: none;
+                box-shadow: 1px 1px rgba(135, 206, 250, 0.53);
+                border-radius: 5px;
+                margin-block: 1rem;
+                font-size: 1.5rem;
+            }
+            .name,
+            .firstname,
+            .email,
+            .password,
+            .passwordConfirm,
+            .rgpd{
+                margin-block: 1rem;
+                padding-block: 0.5rem;
+
+            }
+            .name,
+            .firstname,
+            .email,
+            .password,
+            .passwordConfirm {
+                label{
+                    text-transform: uppercase;
+                }
+                .errors{
+                    color: red;
+                    font-size: 1.5rem;
+                }
+
+            }
+            .submit{
+                text-align: center;
+                margin-block: 3rem;
+                button{
+                    font-size: 1.5rem;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 0.7rem;
+                    background-color: rgba(100, 149, 237, 0.68);
+                    &:hover{
+                        background-color: rgba(0, 196, 255, 0.65);
+                    }
+                }
+            }
+        }
+    }
+}

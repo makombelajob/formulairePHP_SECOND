@@ -1,0 +1,71 @@
+services:
+    apache:
+        image: php:8.5-apache
+        container_name: christophe_tp
+        build:
+            context: ./php
+        ports:
+            -   "8080:80"
+        volumes:
+            -   ./app:/var/www/html/
+        depends_on:
+            -   mysql
+
+    mysql:
+        image: mysql:8.0
+        container_name: christophe_tp_m
+        environment:
+            MYSQL_ROOT_PASSWORD: sondage7791
+            MYSQL_DATABASE: sondageRdc
+            MYSQL_USER: johnny
+            MYSQL_PASSWORD: johnny7791
+        ports:
+            -   "3306:3306"
+        volumes:
+            -   ./mysql:/var/lib/mysql
+
+    phpmyadmin:
+        image: phpmyadmin
+        container_name: christophe_tp_p
+        ports:
+            -   "8081:80"
+        environment:
+            PMA_HOST: mysql
+            PMA_PASSWORD: sondage7791
+        depends_on:
+            -   mysql
+
+    postgresql:
+        image: bitnami/postgresql
+        container_name: christophe_tp_po
+        environment:
+            POSTGRES_USER: user
+            POSTGRES_PASSWORD: password
+            POSTGRES_DB: sondageRdc
+        ports:
+            - "5432:5432"
+        volumes:
+            - ./postgres:/bitnami/postgresql
+
+    pgadmin:
+        image: dpage/pgadmin4
+        container_name: christophe_pgadmin
+        environment:
+            PGADMIN_DEFAULT_EMAIL: admin@example.com
+            PGADMIN_DEFAULT_PASSWORD: admin
+        ports:
+            -   "8082:80"
+        depends_on:
+            -   postgresql
+
+    mail_hog:
+        image: mailhog/mailhog
+        container_name: christophe_tp_mail
+        logging:
+            driver: 'none'
+        ports:
+            -   "1025:1025"
+            -   "8025:8025"
+        
+
+    
