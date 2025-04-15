@@ -76,18 +76,6 @@ A simple CSS style is applied to enhance the look of the form.
    ```bash
    git clone https://github.com/makombelajob/formulairePHP_SECOND.git
    cd formulairePHP_SECOND
-   
-
-## 📂 Project Structure
-formulairePHP_SECOND/
-├── css/
-│   └── styles.css
-
-├── app/
-│   └── assets/
-        └── screenshot.png
-    ├── index.php│       
-└── README.md
 
 ## 🛠 Technologies Used
 
