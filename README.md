@@ -84,7 +84,7 @@ A simple CSS style is applied to enhance the look of the form.
     MYSQL 8.x
     HTML5 / CSS3
 
-    No database required (pure server-side validation)
+    pure server-side validation with database required 
 
 ## 👨‍💻 Author
 
