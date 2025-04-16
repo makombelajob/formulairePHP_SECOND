@@ -1,5 +1,6 @@
 <?php
 require_once 'includes/form_validation.php';
+require_once 'includes/dbconnect.php';
 ?>
 <!doctype html>
 <html lang="fr">
@@ -13,7 +14,7 @@ require_once 'includes/form_validation.php';
     <title>Document</title>
 </head>
 <body>
-<main>
+<main class="mt-5">
     <h1>Formulaire d'inscription</h1>
     <form action="" method="POST">
         <div class="name">
