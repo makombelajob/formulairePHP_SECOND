@@ -76,14 +76,15 @@ A simple CSS style is applied to enhance the look of the form.
    ```bash
    git clone https://github.com/makombelajob/formulairePHP_SECOND.git
    cd formulairePHP_SECOND
+   docker compose up
 
 ## 🛠 Technologies Used
 
     PHP 8.x
-
+    MYSQL 8.x
     HTML5 / CSS3
 
-    No database required (pure server-side validation)
+    pure server-side validation with database required 
 
 ## 👨‍💻 Author
 
